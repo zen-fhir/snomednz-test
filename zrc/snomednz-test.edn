@@ -1,5 +1,6 @@
 {:ns snomednz-test 
- :import #{zenbox}
+ :import #{zenbox
+           snomednz}
 
  CustomTestResource
  {:zen/tags #{zen/schema zenbox/persistent}
