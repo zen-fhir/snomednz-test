@@ -1,0 +1,12 @@
+{:ns snomednz-test 
+ :import #{zenbox}
+
+ CustomTestResource
+ {:zen/tags #{zen/schema zenbox/persistent}
+  :resourceType "CustomTestResource"
+  :confirms #{zenbox/Resource}
+  :type zen/map
+  :keys {:propWithSnomedKey 
+         {:type zen/string
+          :zen.fhir/value-set {:symbol   snomednz/value-set
+                               :strength :required}}}}}
